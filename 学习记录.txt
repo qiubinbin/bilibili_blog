@@ -1,0 +1,8 @@
+1.pip一键导出和安装
+  pip freeze > requirements.txt
+  pip freeze -r requirements.txt
+2.①新建APP
+  ②在settings注册app
+  ③在models中编写模型
+  ④在admin中注册定制模型
+  ⑤迁移数据库makemigrations、makemigrate
