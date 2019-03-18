@@ -6,3 +6,10 @@
   ③在models中编写模型
   ④在admin中注册定制模型
   ⑤迁移数据库makemigrations、makemigrate
+3.html模板中使用传入的字典使用{{}}
+4.a标签的href属性使用{% url 自定义别名 %}来指向链接
+5.html使用for循环{% for %}语句{% endfor %}
+6.html中|为过滤器:如{{ blog.content|truncatewords:30 }}，表示只显示前三十个单词，
+  其他常见过滤器：truncatechars、truncatechars_html、date、length
+7.html模板注释：{##}
+8.模板嵌套
