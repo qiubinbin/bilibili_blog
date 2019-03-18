@@ -12,4 +12,5 @@
 6.html中|为过滤器:如{{ blog.content|truncatewords:30 }}，表示只显示前三十个单词，
   其他常见过滤器：truncatechars、truncatechars_html、date、length
 7.html模板注释：{##}
-8.模板嵌套
+8.模板嵌套block&endblock、extends
+9.全局模板文件夹
