@@ -6,6 +6,7 @@ def blog_list(request):  # Create your views here.
     context = {}
     context['blogs'] = Blog.objects.all()
     context['blog_count'] = Blog.objects.all().count()
+    context['blog_types']=BlogType.objects.all()
     return render_to_response('blog/blog_list.html', context)
 
 
