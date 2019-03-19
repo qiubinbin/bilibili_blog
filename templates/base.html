@@ -1,8 +1,11 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="{% static 'base.css' %}">
+	{% block header_extends %}{% endblock %}
 </head>
 <body>
     <div class='nav'>
@@ -13,25 +16,5 @@
         <a href="{% url 'blog_list' %}">博客</a>
     </div>
     {% block content %}{% endblock %}
-	<style type="text/css">
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		div.nav{
-			background-color: #eee;
-			border-bottom: 2px solid #0794FB;
-			padding: 5 10;
-		}
-		div.nav a{
-			text-decoration: none;//去掉a标签下划线
-			color: #F31118;
-			padding: 10px 7px;
-		}
-		div.nav a.logo{
-			display: inline-block;//设置块
-			font-size: 120%;
-		}
-	</style>
 </body>
 </html>

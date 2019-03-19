@@ -14,3 +14,4 @@
 7.html模板注释：{##}
 8.模板嵌套block&endblock、extends
 9.全局模板文件夹
+10静态文件：CSS文件、JS文件、图片
